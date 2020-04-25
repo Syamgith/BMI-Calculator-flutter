@@ -207,7 +207,7 @@ class _InputPageState extends State<InputPage> {
               ),
             ),
             BottomContainer(
-              text: 'CALCULATE',
+              text: 'CALCULATOR',
               onTap: () {
                 CalculatorBrain calc =
                     CalculatorBrain(weight: weight, height: height);
