@@ -128,6 +128,10 @@ class _InputPageState extends State<InputPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Text(
+                            'WEIGHT',
+                            style: kLabelTextStyle,
+                          ),
+                          Text(
                             weight.toString(),
                             style: kBigTextStyle,
                           ),
@@ -163,6 +167,10 @@ class _InputPageState extends State<InputPage> {
                       cardChild: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
+                          Text(
+                            'AGE',
+                            style: kLabelTextStyle,
+                          ),
                           Text(
                             age.toString(),
                             style: kBigTextStyle,
@@ -207,9 +215,9 @@ class _InputPageState extends State<InputPage> {
                   context,
                   MaterialPageRoute(
                     builder: (context) => ResultsPage(
+                      bmiResult: calc.calculateBMI(),
                       resultDescription: calc.getInterpretation(),
                       resultTitle: calc.getResult(),
-                      bmiResult: calc.calculateBMI(),
                     ),
                   ),
                 );
